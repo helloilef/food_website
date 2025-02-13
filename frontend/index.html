@@ -9,9 +9,42 @@
 <body>
     <div class="bg">
         <div class="glassmorphism">
-            <navbar></navbar>
+            <!-- Top navigation -->
+             <navbar>
+            <div class="topnav">
 
+                <!-- Centered link -->
+                <div class="topnav-centered">
+                <a href="#logo" class="logo" >Fridgify</a>
+                </div>
+            
+                <!-- Left-aligned links (default) -->
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            
+                <!-- Right-aligned links -->
+                <div class="topnav-right">
+                <a href="#search">Search</a>
+                <a href="#" id="login">Login</a>
+                </div>
+            
+            </div>
+            </navbar>
+        <div id="login-form" class="hidden">
+            <div class="login-container">
+                <span class="close-btn">&times;</span> <!-- Close Button -->
+            <h2>Login</h2>
+            <form action="" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit" id="login-btn">Login</button>
+            </form>
+            </div>
+        </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
