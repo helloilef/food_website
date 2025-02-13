@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>HomePage</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="bg">
-        <div class="glassmorphism">
-            <!-- Top navigation -->
-             <navbar>
-            <div class="topnav">
-
-                <!-- Centered link -->
-                <div class="topnav-centered">
-                <a href="#logo" class="logo" >Fridgify</a>
-                </div>
-            
-                <!-- Left-aligned links (default) -->
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            
-                <!-- Right-aligned links -->
-                <div class="topnav-right">
-                <a href="#search">Search</a>
-                <a href="#" id="login">Login</a>
-                </div>
-            
+      <div class="glassmorphism">
+        <!-- Top navigation -->
+        <navbar>
+          <div class="topnav">
+            <!-- Centered link -->
+            <div class="topnav-centered">
+              <a href="#logo" class="logo">Fridgify</a>
             </div>
-            </navbar>
+
+            <!-- Left-aligned links (default) -->
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+              <a href="#search">Search</a>
+              <a href="#" id="login">Login</a>
+            </div>
+          </div>
+        </navbar>
         <div id="login-form" class="hidden">
-            <div class="login-container">
-                <span class="close-btn">&times;</span> <!-- Close Button -->
+          <div class="login-container">
+            <span class="close-btn">&times;</span>
+            <!-- Close Button -->
             <h2>Login</h2>
             <form action="" method="POST">
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username" required>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required>
-                <button type="submit" id="login-btn">Login</button>
+              <label for="username">Username:</label>
+              <input type="text" name="username" id="username" required />
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" required />
+              <button type="submit" id="login-btn">Login</button>
             </form>
-            </div>
+          </div>
         </div>
-        </div>
+        <section>
+          <div class="section-container">
+            <h1>Fridgify</h1>
+            <h2>What recipes can your ingrediants create?</h2>
+            <a href="#" class="cook-btn" id="cook-btn">Let's cook!</a>
+          </div>
+        </section>
+        <div id="dynamic-cook"></div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
